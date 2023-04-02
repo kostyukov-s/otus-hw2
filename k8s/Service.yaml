@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-otus-k8s-hw
+spec:
+  type: ClusterIP
+  selector:
+    app: otus-k8s-hw
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
