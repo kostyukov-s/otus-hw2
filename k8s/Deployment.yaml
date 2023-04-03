@@ -16,7 +16,7 @@ spec:
         - name: otus-k8s-hw
           image: kostyukov1986/otus:otus-image
           ports:
-            - name: http
+            - name: otus-http
               containerPort: 8000
           livenessProbe:
             httpGet:
